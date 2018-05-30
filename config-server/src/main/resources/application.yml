@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HomminLee/imooc-sell-cloud.git
+          search-paths: config-repo/repo
+          basedir: /Users/hommin/Documents/workspace-IDEA/study/imooc-sell-cloud/imooc-cloud-parent/config-server/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
