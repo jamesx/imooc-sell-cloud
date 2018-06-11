@@ -7,6 +7,10 @@ spring:
         enabled: true
         service-id: config-server
       profile: dev
+    stream:
+      bindings:
+        streamDemoQueue:
+          group: orderSub
 eureka:
   instance:
     hostname: localhost
