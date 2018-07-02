@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      discovery:
+        service-id: product-server
+        enabled: true
+    stream:
+      binders:
+        streamDemoQueue:
+          group: productSub
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

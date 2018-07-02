@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    order:
+      path: /o/**
+      serviceId: order
+      sensitiveHeaders:
+#    order: /o/**
+#  ignored-patterns:
+#    - /**/name
+management:
+  security:
+    enabled: false
+
