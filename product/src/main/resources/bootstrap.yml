@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       discovery:
-        service-id: product-server
+        service-id: config-server
         enabled: true
     stream:
       binders:
